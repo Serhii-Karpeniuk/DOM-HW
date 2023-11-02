@@ -1,0 +1,27 @@
+.title {
+    background-color: green;
+}
+
+.first__paragraph {
+    font-weight: bold;
+}
+
+.second__paragraph {
+    color: red;
+}
+
+.third__paragraph {
+    text-decoration: underline;
+}
+
+.four__paragraph {
+    font-style: italic;
+}
+
+#myList {
+    display: flex;
+  }
+  
+  #myList li {
+    display: inline;
+  }
