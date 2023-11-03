@@ -11,7 +11,4 @@ document.addEventListener("DOMContentLoaded", function () {
     divElement.appendChild(paragraphElement);
 
     paragraphElement.innerHTML = 'First paragraph';
-
-    const script = document.querySelector('script');
-    newElement.after(script);
 });
