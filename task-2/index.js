@@ -18,12 +18,9 @@ const secondElement = document.querySelector('#myList li:nth-child(2)');
 const thirdElement = document.querySelector('#myList li:nth-child(3)');
 
 const concat = firstElement.innerText + secondElement.innerText + thirdElement.innerText;
-// console.log(concat)
 
 const remove = document.querySelector('span')
 remove.remove();
 
 
 
-// title.innerHTML += (' Serhii Developer')
-// console.log(title)
