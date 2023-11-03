@@ -1,10 +1,6 @@
- // Реалізувати логіку підрахунку ціни товару по його варіаціях(шаблон наведений тут, при кліку на колір змінювати ціну товару).
-// Придумати ще 2 варіації, відяких буде залежати ціна товару.
-
 const colors = document.querySelectorAll('.color');
 const imageChange = document.querySelectorAll('.shoe');
 const sizes = document.querySelectorAll('.size');
-// const addHover = document.querySelectorAll('.active');
 
 let discount = 0;
 
