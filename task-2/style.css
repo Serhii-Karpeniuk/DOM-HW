@@ -17,11 +17,3 @@
 .four__paragraph {
     font-style: italic;
 }
-
-#myList {
-    display: flex;
-  }
-  
-  #myList li {
-    display: inline;
-  }
