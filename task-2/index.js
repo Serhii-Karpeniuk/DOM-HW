@@ -1,26 +1,16 @@
 const title = document.querySelector('h1')
-title.classList.add('title');
+ title.classList.add('title');
 
-const firstParagraph = document.querySelector('#myDiv p:first-child');
-firstParagraph.classList.add('first__paragraph');
+const elementsP = document.querySelectorAll('#myDiv p');
+const names = ['first', 'second', 'third', 'four'];
+for (let i = 0; i < elementsP.length; i++) {
+    elementsP[i].classList.add(`${names[i]}__paragraph`);
+}
 
-const secondParagraph = document.querySelector('#myDiv p:nth-child(2)');
-secondParagraph.classList.add('second__paragraph');
+const elementsLi = document.getElementById('myList');
+elementsLi.style = 'display:flex; list-style:none;'
 
-const thirdParagraph = document.querySelector('#myDiv p:nth-child(3)');
-thirdParagraph.classList.add('third__paragraph');
-
-const fourParagraph = document.querySelector('#myDiv p:nth-child(4)');
-fourParagraph.classList.add('four__paragraph');
-
-const firstElement = document.querySelector('#myList li:first-child');
-const secondElement = document.querySelector('#myList li:nth-child(2)');
-const thirdElement = document.querySelector('#myList li:nth-child(3)');
-
-const concat = firstElement.innerText + secondElement.innerText + thirdElement.innerText;
-
-const remove = document.querySelector('span')
-remove.remove();
+document.querySelector('span').hidden = true;
 
 
 
