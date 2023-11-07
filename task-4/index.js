@@ -1,13 +1,14 @@
 document.querySelector('.btn').addEventListener('click', function(){
-    const fullName = document.querySelector('.text-data.arr').value;
-    const phoneNumber = document.querySelectorAll('.arr')[1].value;
-    const birthDate = document.querySelectorAll('.arr')[2].value;
-    const emailInput = document.querySelectorAll('.arr')[3].value;
+    const inputs = document.querySelectorAll('.arr');
+    let outputHTML = '';
 
+    inputs.forEach(input => {
+        const getDataForm = input.getAttribute('data-form');
+        const getValue = input.value;
+        outputHTML += `<p>${getDataForm}: ${getValue}</p>`;
+    });
     const outBlock = document.querySelector('.out');
-    outBlock.innerHTML = `<p>ПІБ: ${fullName}</p>
-                          <p>Номер телефону: ${phoneNumber}</p> 
-                          <p>Дата народження: ${birthDate}</p>
-                          <p>Емейл: ${emailInput}</p>`
+    outBlock.innerHTML = outputHTML;
 });
+
 
